@@ -1,0 +1,102 @@
+<!--
+Homework 9 Java Script
+Name: Wyatt LaRose
+Student Email: Wyatt_LaRose@student.uml.edu
+Computer Science Email: wlarose@cs.uml.edu
+Affiliation: UMass Lowell Computer Science, Junior Year
+Date Created: 11/19/2019
+Description:
+This assignment is to create a one line strip of scrabble 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scrabble</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <script src="https://ajax.microsoft.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+    <script src="js/javaScript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      
+    </script>
+   <link rel="stylesheet" href="css/styleSheet.css">
+  </head>
+  <body>
+  <div id="Game">
+    <h1>Scrabble Homework 9</h1>
+    <div id="board"><!--This is the board, each space is a specific img-->
+      <img class="boardTile" id="boardSpace1" src="images/singleTile.png">
+      <img class="boardTile" id="boardSpace2" src="images/doubleTile.png">
+      <img class="boardTile" id="boardSpace3" src="images/singleTile.png">
+      <img class="boardTile" id="boardSpace4" src="images/singleTile.png">
+      <img class="boardTile" id="boardSpace5" src="images/singleTile.png">
+      <img class="boardTile" id="boardSpace6" src="images/doubleTile.png">
+      <img class="boardTile" id="boardSpace7" src="images/singleTile.png">
+      <br />
+      <img class="boardTile" id="boardSpace8" src="images/singleTile.png">
+      <br />
+      <img class="boardTile" id="boardSpace9" src="images/singleTile.png">
+      <br />
+      <img class="boardTile" id="boardSpace10" src="images/singleTile.png">
+      <br />
+      <img class="boardTile" id="boardSpace11" src="images/singleTile.png">
+    </div>
+    <!--This is the tile rack, the way this works is that the background is the tile rack img
+      the tiles are an img inside a div, when these divs are dragged over the the img tags inside the board div
+      the boards img srcs will change to the divs childs source after it is set it will remove the child from its div
+      this will then be added back later when new tiles are requested by the user-->
+    <div id="tileRack">
+      <div id="space">
+      </div> <!-- Just used for making sure the tiles fit on the rack-->
+      <div id="letterTile1" class="ui-widget-content"><!-- This is the way a tile is set up, its a div with the tile letter, and the contents are the img tile which is originally set to blank but the changed to random with the javascript-->
+        <img id="letterTileImg1" letter="" score="" class="letterTile" src="images/Scrabble_Tile_Blank.jpg">
+      </div> 
+      <div id="letterTile2" class="ui-widget-content">
+        <img id="letterTileImg2" letter="" score="" class="letterTile" src="images/Scrabble_Tile_Blank.jpg">
+      </div> 
+      <div id="letterTile3" class="ui-widget-content">
+        <img id="letterTileImg3" letter="" score="" class="letterTile" src="images/Scrabble_Tile_Blank.jpg">
+      </div> 
+      <div id="letterTile4" class="ui-widget-content">
+        <img id="letterTileImg4" letter="" score="" class="letterTile" src="images/Scrabble_Tile_Blank.jpg">
+      </div> 
+      <div id="letterTile5" class="ui-widget-content">
+        <img id="letterTileImg5" letter="" score="" class="letterTile" src="images/Scrabble_Tile_Blank.jpg">
+      </div> 
+      <div id="letterTile6" class="ui-widget-content">
+        <img id="letterTileImg6" letter="" score="" class="letterTile" src="images/Scrabble_Tile_Blank.jpg">
+      </div>
+      <div id="letterTile7" class="ui-widget-content">
+        <img id="letterTileImg7" letter="" score="" class="letterTile" src="images/Scrabble_Tile_Blank.jpg">
+      </div>  
+    </div>  
+  
+
+    <div id="scoresCenter"><!-- The body for the scores so they line up in the center underneath the tiles-->
+      <div class="totalScore">
+        WORD SCORE:
+      </div>
+      <div class="totalScore" id="Score">
+        0
+      </div>
+      <div id="space"></div>
+      <div class="totalScore" >
+        TOTAL SCORE:
+      </div>
+      <div id="TotalScore">
+        0
+      </div>
+    </div>
+
+    <button type="button" value="Submit" onclick="submit()">Submit</button> <!-- The button that is used to submit a word -->
+    <button type="button" value="Submit" onclick="clearBoard()">Clear</button>
+  </div>
+  </body>
+</html>
+
+

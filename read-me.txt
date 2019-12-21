@@ -1,0 +1,24 @@
+Homework 9 Java Script
+Name: Wyatt LaRose
+Student Email: Wyatt_LaRose@student.uml.edu
+Computer Science Email: wlarose@cs.uml.edu
+Affiliation: UMass Lowell Computer Science, Junior Year
+Date Created: 11/19/2019
+Description:
+This assignment is to create a one line strip of scrabble 
+
+Working features:
+
+From the syllabus:
+• (4) letter tiles in the player’s “hand” are selected randomly from a data structure with the proper distribution of the letters - WORKING this is selected using a random nunmber generator between 0-99 (100 tiles) for an array that has the correct amount of each tiles. So theres 9 0's for A, when so it has a 9% chance to chose 0 which will then be given to the array of objects for index 0 which is A.
+• (4) letter tiles can be dragged-and-dropped onto target Scrabble squares - WORKING
+Used Jquery dragables and droppables
+• (4) program identifies which letter tile is dropped onto which Scrabble square - WORKING
+Used tag attributes to set the img tags that have the tiles to the Array objects varibles such as the src for the img and the score and letter i.e letter="A"
+• (4) board includes bonus squares - WORKING Bonus squares set the word multipler to 2 and 4 when a tile is placed on them this multiplyer is reset to 1 after submit has be clicked
+• (4) score is tallied correctly, including consideration of bonus square multipliers - WORKING Uses the tags score attribute to add to the score and total score is tallied correctly
+• (3) any number of words can be played until the player wishes to quit - WORKING It will reset when you submit a word keeping your score
+• (3) the board is cleared after each round so that a new word can be played - WORKING Board clears and the bord is set to the correct board space and the letter tiles that were removed are re added correctly
+• (3) after playing a word, only the number of letter tiles needed to bring the player’s “hand” - WORKING Yes the script searches for each of the 7 tiles img id i.e letterTile1 if that id is not on the page it will append it to the parent div and recreate the tiles (and randomize it) it needs.
+back to 7 tiles are selected - WORKING
+• (3) score is kept for multiple words - WORKING Slight bug with this, when the user plays a word the word score doesnt reset on the screen when the user clicks submit, it will stay at the value, however it resets to 0 in the program im not sure why it wouldnt reset because I do set it to 0, however say the last word score was 5, when youre inputting a new word and that words score is 6 it will increase to 6, this does not affect the actuall tallying of the score however and the total score box is still accurate.

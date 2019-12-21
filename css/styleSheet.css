@@ -1,0 +1,64 @@
+/*
+	//Homework 9 Java Script
+	//Name: Wyatt LaRose
+	//Student Email: Wyatt_LaRose@student.uml.edu
+	//Computer Science Email: wlarose@cs.uml.edu
+	//Affiliation: UMass Lowell Computer Science, Junior Year
+*/
+h1{
+	text-align: center;
+}
+#board{
+	font-size: 0px; /*remove white space between board*/
+	display: block;
+	text-align: center;
+}
+#tileRack{
+	background-image: url("../images/tileRack.png"); /*sets background to tile rack img*/
+	background-repeat: no-repeat;
+	background-size: 640px;
+	height: 182px;s
+	width: 640px;
+	/*Centers the tile rack div*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#space{/*used for lining up the tiles on the board*/
+	float: left;
+	margin-right: 35px;
+	margin-top: 35px;
+}
+#letterTile1,#letterTile2,#letterTile3,#letterTile4,#letterTile5,#letterTile6,#letterTile7 { /*This lines up all the tiles onto the board the same way so it fits on the rack correctly*/
+	float: left;
+	margin-right: 5px;
+	margin-top: 45px;
+
+}
+#scoresCenter{/*centering the scores div*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+}
+.totalScore{ /*positioning the scores*/
+	float: left;
+}
+.letterTile{/*set the size that each letter tile should be*/
+	width: 80px;
+	height: 80px;
+}
+.boardTile{/*set the size that each board tile should be*/
+	width: 80px;
+	height: 85px;
+}
+#Game{/*used for the game area to center it all in the page*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  background-color: white;
+}
+body{ /*set the body background color*/
+	background-color: rgb(173,216,230);
+}
